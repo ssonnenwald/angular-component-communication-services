@@ -109,6 +109,12 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://ssonnenwald.github.io/angular-component-communication-services/"
+          }
         }
       }
     }
