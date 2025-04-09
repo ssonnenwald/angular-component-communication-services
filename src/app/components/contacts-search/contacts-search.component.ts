@@ -1,10 +1,5 @@
-import {
-  Component,
-  model,
-  ModelSignal,
-  signal,
-  WritableSignal,
-} from '@angular/core';
+import { Component, inject, signal, WritableSignal } from '@angular/core';
+import { SearchService } from '../../services/search/search.service';
 
 @Component({
   selector: 'app-contacts-search',
@@ -15,7 +10,5 @@ import {
 export class ContactsSearchComponent {
   public search: WritableSignal<boolean> = signal(false);
 
-  public searchTerm: ModelSignal<string | undefined> = model<string>();
-
-  public ngOnInit(): void {}
+  public searchService: SearchService = inject(SearchService);
 }

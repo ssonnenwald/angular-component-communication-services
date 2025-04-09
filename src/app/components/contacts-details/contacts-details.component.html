@@ -1,5 +1,5 @@
 <div class="detail-content overflow-auto">
-  @for(contact of filteredContacts(); track contact) {
+  @for(contact of searchService.filteredContacts(); track contact) {
   <div class="contact-row">
     <div class="d-flex flex-column pt-2 pb-2">
       <span class="contact-name">{{ contact.name }}</span>

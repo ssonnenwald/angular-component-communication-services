@@ -8,7 +8,7 @@
     <div class="input-container">
       <input
         #searchField
-        (input)="searchTerm.set(searchField.value)"
+        (input)="searchService.updateSearchTerm(searchField.value)"
         class="search-input"
         autoFocus="true"
       />
