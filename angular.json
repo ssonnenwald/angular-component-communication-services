@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-component-communication-model-inputs": {
+    "angular-component-communication-services": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-component-communication-model-inputs",
+            "outputPath": "dist/angular-component-communication-services",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
@@ -79,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-component-communication-model-inputs:build:production"
+              "buildTarget": "angular-component-communication-services:build:production"
             },
             "development": {
-              "buildTarget": "angular-component-communication-model-inputs:build:development"
+              "buildTarget": "angular-component-communication-services:build:development"
             }
           },
           "defaultConfiguration": "development"
