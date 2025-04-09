@@ -1,7 +1,7 @@
 import {
   ApplicationConfig,
   importProvidersFrom,
-  provideZoneChangeDetection,
+  provideExperimentalZonelessChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
@@ -12,10 +12,10 @@ import { InMemoryDataService } from './services/in-memory-data/in-memory-data.se
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideExperimentalZonelessChangeDetection(),
     provideHttpClient(),
     importProvidersFrom(
-      InMemoryWebApiModule.forRoot(InMemoryDataService, { delay: 1000 })
+      InMemoryWebApiModule.forRoot(InMemoryDataService) // Could add a delay if we wanted too.  'InMemoryDataService, { delay: 1000 }'
     ),
     provideRouter(routes),
   ],

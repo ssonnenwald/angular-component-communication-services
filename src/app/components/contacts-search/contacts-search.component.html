@@ -1,0 +1,21 @@
+<div class="d-flex flex-row w-100">
+  @if(!search()) {
+  <button class="search" (click)="search.set(true)">
+    <span class="search-icon material-symbols-outlined">search</span>
+  </button>
+  } @else {
+  <div class="search-filter">
+    <div class="input-container">
+      <input
+        #searchField
+        (input)="searchTerm.set(searchField.value)"
+        class="search-input"
+        autoFocus="true"
+      />
+      <button class="d-flex align-items-center" (click)="search.set(false)">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+  </div>
+  }
+</div>

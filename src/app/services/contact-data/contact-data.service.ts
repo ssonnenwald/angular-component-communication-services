@@ -8,7 +8,7 @@ import { Contact } from '../../models/contact';
 })
 export class ContactDataService {
   private http: HttpClient = inject(HttpClient);
-  private apiUrl = 'api/items'; // URL to in-memory web API
+  private apiUrl = 'api/contacts'; // URL to in-memory web API
 
   public constructor() {}
 

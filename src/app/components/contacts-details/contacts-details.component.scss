@@ -1,0 +1,30 @@
+.detail-content {
+  max-height: calc(100vh - 158px);
+
+  .contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+    border-bottom: 1px solid gray;
+
+    .contact-name {
+      font-size: 1.2rem;
+    }
+
+    .contact-phone {
+      color: gray;
+    }
+
+    .round-span {
+      display: inline-block;
+      width: 50px; /* Adjust width */
+      height: 50px; /* Adjust height */
+      background-color: #00458f; /* Background color */
+      color: white; /* Text color */
+      text-align: center;
+      line-height: 50px; /* Vertically center text */
+      border-radius: 50%; /* Makes the span round */
+    }
+  }
+}

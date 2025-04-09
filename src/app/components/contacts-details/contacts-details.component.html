@@ -1,0 +1,15 @@
+<div class="detail-content overflow-auto">
+  @for(contact of filteredContacts(); track contact) {
+  <div class="contact-row">
+    <div class="d-flex flex-column pt-2 pb-2">
+      <span class="contact-name">{{ contact.name }}</span>
+      <span class="contact-phone">{{ contact.phone }}</span>
+    </div>
+    <div class="d-flex flex-column justify-content-center me-2">
+      <a [href]="'tel:' + contact.phone">
+        <span class="round-span material-symbols-outlined">call</span>
+      </a>
+    </div>
+  </div>
+  }
+</div>
