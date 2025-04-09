@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'angular-component-communication' title`, () => {
+  it(`should have the 'angular-component-communication-model-inputs' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-component-communication');
+    expect(app.title).toEqual('angular-component-communication-model-inputs');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-component-communication');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-component-communication-model-inputs');
   });
 });
