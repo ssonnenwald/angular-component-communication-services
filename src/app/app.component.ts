@@ -8,5 +8,5 @@ import { LayoutComponent } from './core/components/layout/layout.component';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'angular-component-communication-services';
+  title = 'Angular - Component Communication Services';
 }
